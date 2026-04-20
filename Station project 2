@@ -1,0 +1,33 @@
+import random
+input("Press Enter to roll dice...")
+def roll_dice():
+
+    return random.randint(1, 6) + random.randint(1, 6 )
+
+
+first_roll = roll_dice()
+
+print("First roll:", first_roll)
+
+if first_roll in [7, 11]:
+    print("You Win!")
+
+elif first_roll in [2, 3, 12]:
+    print("Casino Win!")
+
+else:
+    goal = first_roll
+    print("Goal number is:", goal)
+
+    while True:
+        input("Press Enter to roll dice...")
+        new_roll = roll_dice()
+        print("Roll:", new_roll)
+
+        if new_roll == goal:
+            print("You Win!!!")
+            break
+
+        if new_roll == 7:
+            print("You Lost!")
+            break
