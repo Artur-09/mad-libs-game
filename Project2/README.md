@@ -6,7 +6,7 @@ This program simulates rolling two six-sided dice and determines the outcome bas
 
 First Roll:
 7 or 11 → 🎉 You win
-
+ 
 2, 3, or 12 → 💀 Casino wins (you lose)
 
 Any other number → becomes your goal number
