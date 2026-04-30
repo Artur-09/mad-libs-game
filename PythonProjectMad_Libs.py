@@ -64,18 +64,29 @@ def castle_story():
     person = get_text("Enter a person's name: ")
     adjective1 = get_text("Enter an adjective: ")
     color = get_text("Enter a color: ")
-    number = get_number("Enter a number: ")
+    adjective2 = get_text("Enter a adjectiv 2: Magical Creature (Plural)2: ") 
+    adjective3 = get_text("Enter a adjectiv 3:Magical Creature (Plural)3: ")
+    noun1 = get_text("Enter a noun1: ")
+    noun2 = get_text("Enter a noun2: ")
+    noun3 = get_text("Enter a (Noun(Plural)3): ")
+    adjective4 = get_text("Enter a adjective4: ")
+    noun4 = get_text("Enter a Noun (Plural)4): ")
+    number = get_number("Enter a number: (Measure of time): ")
     verb_ing = get_text("Enter a verb ending in -ing: ")
+    adjectiv5 = get_text("Enter a adjectiv5: ")
+    noun5 = get_text("Enter a noun5: ")
 
     story = f"""
 Dear {person}, I am writing to you from a {adjective1} castle in an enchanted forest.
 I found myself here one day after going for a ride on a {color} animal in a faraway place.
-There are {magical_creature1} and {magical_creature2} here!
-In the {room} there is a pool full of {noun1}.
-I fall asleep each night on a {noun2} of {noun3} and dream of {adjective2} adventures.
+There are {adjective2} and {adjective3} here!
+In the Room in a House there is a pool full of {noun1}.
+I fall asleep each night on a {noun2} of {noun3} and dream of {adjective4} {noun4} .
 It feels as though I have lived here for {number} days.
-I hope one day you can visit, although the only way to get here now is {verb_ing} on a magical creature!!
+I hope one day you can visit, although the only way to get here now is {verb_ing} on a {adjectiv5}!!
+
 """
+    
     print(story)
 
 
